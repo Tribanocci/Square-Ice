@@ -10,7 +10,7 @@
 //==================================================================================================================
 //==================================================================================================================
 
-#include "/home/tribonacci/Documents/Square-Ice/mainice.h"
+#include "mainice.h"
 
 bool newvc(int , int );
 
@@ -24,60 +24,60 @@ int step(std::array<int,WIDTH*HEIGHT> &a, int k, int &m, int &prev, int &neight2
 	if ((k%WIDTH)==0) {q=k+(WIDTH-1);} if (((k+1)%WIDTH)==0) {n=k-WIDTH+1;}
 	//==============================================================
 	switch(a[k]) {
-         case 1 :
-			         	do 
-			         	{newv=randstat();}
-			         	while((newv==4)||(newv==1)||newvc(m,newv));
-			         	a[k]=newv;
-			         		switch(newv) {
-			         				case 2:
-								 neight1 = q; neight2= n;
-								 m1=1; m2=-1;
-								 break;
-								case 3:
-								 neight1= o; neight2 =p;
-								 m1=2; m2=-2;
-								 break;
-								case 5:
-								 neight1=n; neight2=p;
-								 m1=-1;  m2=-2;
-								 break;
-								case 6:
-								 neight1=o; neight2=q;
-								 m1=2; m2=1;
-								 break;
-								 }
-								 break;
-		 case 2 :
-         					do 
-         					{newv=randstat();}
-         					while((newv==3)||(newv==2)||newvc(m,newv));
-         						a[k]=newv;
-				         		switch(newv) {
-				         			case 1:
-									 neight1 = q; neight2= n;
-									 m1=-3; m2=3;
-									 break;
-									case 4:
-									 neight1= o; neight2 =p;
-									 m1=2; m2=-2;
-									 break;
-									case 5:
-									 neight1=q; neight2=p;
-									 m1=-3; m2=-2;   
-									 break;
-									 case 6:
-									 	neight1=o; neight2=n;
-									 	m1=2; m2=3;
-									 	break;
-									 }
-									 break;
+        case 1 :
+			do {
+				newv=randstat();
+			} while((newv==4)||(newv==1)||newvc(m,newv));
+			a[k]=newv;
+			switch(newv) {
+			    case 2:
+					neight1 = q; neight2= n;
+					m1=1; m2=-1;
+					break;
+				case 3:
+					neight1= o; neight2 =p;
+					m1=2; m2=-2;
+					break;
+				case 5:
+					neight1=n; neight2=p;
+					m1=-1;  m2=-2;
+					break;
+				case 6:
+					neight1=o; neight2=q;
+					m1=2; m2=1;
+					break;
+			}
+			break;
+		case 2 :
+         	do {
+				newv=randstat();
+			} while((newv==3)||(newv==2)||newvc(m,newv));
+         	a[k]=newv;
+			switch(newv) {
+				case 1:
+					neight1 = q; neight2= n;
+					m1=-3; m2=3;
+					break;
+				case 4:
+					neight1= o; neight2 =p;
+					m1=2; m2=-2;
+					break;
+				case 5:
+					neight1=q; neight2=p;
+					m1=-3; m2=-2;   
+					break;
+				case 6:
+					neight1=o; neight2=n;
+					m1=2; m2=3;
+					break;
+				}
+			break;
          	
         case 3 :
-         					do 
-         					{newv=randstat();}
-         					while((newv==3)||(newv==2)||newvc(m,newv));
-         						a[k]=newv;
+         	do {
+				newv=randstat();
+			} while((newv==3)||(newv==2)||newvc(m,newv));
+         	a[k]=newv;
 				         		switch(newv) {
 				         			case 1:
 									 neight1= o; neight2 =p;

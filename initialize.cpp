@@ -4,7 +4,7 @@
 //-----------the output is returned  via an array of fixed dimensions(WIDTH, HEIGHT)-------------------------------
 //=================================================================================================================
 
-#include "/home/tribonacci/Documents/Square-Ice/mainice.h"
+#include "mainice.h"
 
 bool fexists(const std::string& filename) {
   std::ifstream ifile(filename.c_str());

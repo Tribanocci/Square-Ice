@@ -1,4 +1,4 @@
-#include "/home/tribonacci/Documents/Square-Ice/mainice.h"
+#include "mainice.h"
 
 //================================================================================================
 //--------------------bool nearneightboor(a,k) has input the a array(current state) and the ------

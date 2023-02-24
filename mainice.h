@@ -15,7 +15,7 @@ int const WIDTH{7};
 
 //-----------Dimensions of the array -------------------------
 //------responsible for the lattice visualization-------------
-int const STORHEIGHT{6*HEIGHT+6};
+int const STORHEIGHT{6*HEIGHT+6}; //"6" is for the zoom factor, is arbitrary
 int const STORWIDTH{6*WIDTH+6};
 //------------------------------------------------------------
 
